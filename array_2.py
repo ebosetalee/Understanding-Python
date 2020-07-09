@@ -1,3 +1,16 @@
+# Arrays are collection of number data types; unlike lists,to use an array, we need to create an array object 
+# by importing from the array library.
+
+# from array import array
+
+# scores = array("d")
+# scores.append(97)
+# scores.append(98)
+# print(scores)
+# print(scores[1])
+
+# I don't have the array library
+
 print("\n\n----------------------------------------------------------------------------\n\n")
 numbers = [1,2,3,4]
 
