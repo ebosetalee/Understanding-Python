@@ -24,7 +24,7 @@ print("-"* 40)
 
 # To convert a sate string to a datetime object:
 birthday = input("When is your birthday (dd/mm/yyyy)? ")
-birth_date = datetime.strptime(birthday, "%d/%m/%y")
+birth_date = datetime.strptime(birthday, "%d/%m/%Y")
 
 print("Birthday is " + str(birth_date))
 
