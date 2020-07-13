@@ -25,4 +25,3 @@ else:
 # above 18 and under 31).
 # if they are, welcome them to the holiday, otherwise print 
 # a (polite) message refusing them entry.
-
