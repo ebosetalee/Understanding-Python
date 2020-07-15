@@ -31,4 +31,14 @@ with open("binary", "br") as binFile:
 # In this example, we write the value out of four variables and allows to read those values back again
 # 
 #  
-a = 65532 # equivalent to FF FE
+a = 65534 # equivalent to FF FE
+x = 65535 # equivalent to FF FF
+c = 65536 # equivalent to 00010000
+d = 29998302 # # equivalent to 002DC01E
+
+with open("binary2", "bw") as bin_files:
+    bin_files.write(a.to_bytes(2, "big"))
+    bin_files.write(x.to_bytes(2, "big"))
+    bin_files.write(c.to_bytes(4, "big"))
+    bin_files.write(d.to_bytes(4, "big"))
+    bin_files.write(d.to_bytes(4, "little"))
