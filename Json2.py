@@ -63,3 +63,29 @@ for item in results["description"]["tags"]:
 # print out the first tag in the description
 print("first_tag")
 print(results["description"]["tags"][0])
+
+# To manage keys, we can use environmental variables. i.e Values from
+# outside your application such as connecting to database, determining
+# the os; setings which need to change; sensitive data.
+# 
+# We'll import the os lib and call a function called getenv and then pass
+# in the name of this system variable or environmental variable that we want.
+#   
+import os 
+os_version = os.getenv("os")
+print(os_version)
+
+# Another is dotenv: it is a package that has a version available for every
+# major programming environment. It gives the opportunity to set and store those
+# environmental variables inside of a text file. Thus, no hard code and no checking
+# of sensitive values into source sontrol.
+
+# .env file - create a .env file
+# DATABASE=Sample_Connection_String 
+# 
+# app.py
+# from dotenv import load_dotenv
+# import os 
+# load_dotenv()
+# database = os.getenv("DATABASE") 
+# print(database) 
