@@ -183,4 +183,10 @@ print(x2)
 # that can't be trusted as seen below.
 # 
 # NOte: rm is to remove file from mac/linux
-# Check this link for more details https://docs.python.org/3/library/pickle.html  
+# Check this link for more details https://docs.python.org/3/library/pickle.html 
+
+
+# Pickle has a draw back i.e the objects all have to be loaded back into memory
+# i.e the computer's memory that's fine for some situations but dealing with large 
+# set of objects e.g a large dictionary then loadng that to memory may not be a
+# realistic option. Thus, the alternative is to use the Shelve Module.  
