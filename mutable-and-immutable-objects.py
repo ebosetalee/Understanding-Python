@@ -38,3 +38,22 @@ print(shopping_list)
 print(id(shopping_list))
 # the ID remains unchanged, and that's because lists are mutable and 
 # Python was able to add a newitem to the end of the list, without creating a new list.
+print(another_list)
+
+a = b = c = d = e = f = another_list
+# this bound more names to the list and we can use any name to call the list.
+print(a)
+
+print("Adding cream")
+
+b.append("cream")
+
+print(c)
+# we'll see that cream is added to the list regardless of the name used to call it 
+print(d)
+
+print(id(a))
+print(id(b))
+print(id(c))
+print(id(another_list))
+#we see they have the same id
