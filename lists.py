@@ -1,6 +1,11 @@
 even = [2, 4, 6, 8]
 odd = [1, 3, 5, 7, 9]
 
+print(min(even))
+print(max(even))
+print(min(odd))
+print(max(odd))
+
 numbers = odd + even
 # numbers.sort()
 # is command is used to check if the two are identically equal 
@@ -23,3 +28,6 @@ for number_set in numers:
   print(number_set)
   for value in number_set:
     print(value)
+
+print()
+print("mississippi".count("s"))
