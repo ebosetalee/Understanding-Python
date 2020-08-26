@@ -1,4 +1,4 @@
-### __What is an Data Structure?__
+### __What is Data Structure?__
 
 Data structure is a programmatic way of collecting, storing and organizing data. 
 TYPES OF DATA STRUCTURE:
