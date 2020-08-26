@@ -37,6 +37,10 @@ class LinkedList:
                 previous_node = previous_node.next
             previous_node.next = new_node
             self.tail = previous_node.next
+            # OR
+            # current_node = self.tail
+            # current_node.next = new_node
+            # self.tail = current_node.next
 
     def prepend(self, value):
         """
