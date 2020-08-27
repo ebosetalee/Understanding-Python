@@ -27,7 +27,8 @@ class LinkedList:
         :param value: the value to be added
         """
         new_node = Node(value)
-        if self.head is None:
+        # if self.head is None: OR
+        if not self.head:
             self.head = new_node
             self.tail = self.head
         else:
@@ -111,7 +112,7 @@ class LinkedList:
             if current_node.value == value:
                 print("found {}".format(value))
                 return value
-            else:
+            else: # else isn't necessary
                 current_node = current_node.next
         return None
 
