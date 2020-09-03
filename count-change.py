@@ -1,5 +1,5 @@
 def count_change(amount, denomination): 
-    m= len(denomination)
+    m = len(denomination)
 
     table = [0 for k in range(amount+1)] 
   
