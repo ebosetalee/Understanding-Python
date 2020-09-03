@@ -98,6 +98,7 @@ class LinkedList:
             elements.append(current_node.value)
             current_node = current_node.next
         print(elements)
+        print(elements[::-1])
         return elements
 
     def search(self, value):
