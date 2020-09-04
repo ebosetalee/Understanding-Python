@@ -1,5 +1,7 @@
 import random
-name1 = random.choice(["timi", "funmi", "jasmine", "praise", "anna", "lisa" ])
+
+
+name1 = random.choice(["timi", "funmi", "jasmine", "praise", "anna", "lisa"])
 name2 = random.choice(["seun", "joseph", "frank", "daniel", "bayo", "david"])
 
 calculator_name = name1 + "loves" + name2
