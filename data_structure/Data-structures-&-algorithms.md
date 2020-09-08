@@ -1,4 +1,6 @@
 ### __What is Data Structure?__
+[study tonight](https://www.studytonight.com/data-structures/)
+[tutorials point](www.tutorialspoint.com/data_structures_algorithms)
 
 Data structure is a programmatic way of collecting, storing and organizing data. 
 TYPES OF DATA STRUCTURE:
@@ -95,6 +97,7 @@ __Basic Operations__
 6. Reverse - Moves the head list to the last node.
 
 ###### SIMPLE / LINEAR LINKED LIST
+[git hub tutorial](https://github.com/vprusso/youtube_tutorials/blob/master/data_structures/linked_list/singularly_linked_list/linked_list_insertion.py)
 Linear Linked list is the default linked list and a linear data structure in which data is not stored in contiguous memory locations but each data node is connected to the next data node via a pointer, hence forming a chain.
 
 The element in such a linked list can be inserted in 2 ways:
@@ -151,6 +154,30 @@ Array gets memory allocated in the Stack section. |	Whereas, linked list gets me
 
 __NODE__
 A Node in a linked list holds the data value and the pointer which points to the location of the next node in the linked list. In other words, it is a data value and a pointer (pointing to the next node) put together.
+
+__QUEUE__
+Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is open at both its ends. One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). 
+Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.
+In computer science, a queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principle (or only) operations on the collection are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. 
+This makes the queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the queue will be the first one to be removed.
+
+__Basic Operations__
+1. enqueue() − add (store) an item to the queue.
+2. dequeue() − remove (access) an item from the queue.
+3. peek() − Gets the element at the front of the queue without removing it.
+4. isfull() − Checks if the queue is full.
+5. isempty() − Checks if the queue is empty.
+
+__Applications of Queue__
+Queue, as the name suggests is used when we need to manage any group of objects in an order in which the first one coming in, also gets out first while the others wait for their turn, like in the following scenarios:
+1. Serving requests on a single shared resource, like a printer, CPU task scheduling etc.
+2. In real life scenario, Call Center phone systems uses Queues to hold people calling them in an order, until a service representative is free.
+3. Handling of interrupts in real-time systems. The interrupts are handled in the same order as they arrive i.e First come first served.
+
+__Implementation of Queue__
+[git hub tutorial](https://github.com/joeyajames/Python/blob/master/Queues%20implementaion.py)
+Queue can be implemented using an Array, Stack or Linked List. The easiest way of implementing a queue is by using an Array.
+Initially the head(FRONT) and the tail(REAR) of the queue points at the first index of the array (starting the index of array from 0). As we add elements to the queue, the tail keeps on moving ahead, always pointing to the position where the next element will be inserted, while the head remains at the first index.
 
 
 ### __What is an Algorithm ?__
