@@ -1,48 +1,48 @@
-# # in python 2 ranges is implemented as a function''
-# # but in python 3 ranges is built in type
+# in python 2 ranges is implemented as a function''
+# but in python 3 ranges is built in type
 
-# print(range(100))
-# # note how it didnt print from 0-99 because the function for to loop through o list to make a list wasn't used.
+print(range(100))
+# note how it didnt print from 0-99 because the function for to loop through o list to make a list wasn't used.
 
-# my_list = list(range(10))
-# print(my_list)
+my_list = list(range(10))
+print(my_list)
 
-# even = list(range(0, 10, 2))
-# odd = list(range(1, 10, 2))
-# print(even)
-# print(odd)
+even = list(range(0, 10, 2))
+odd = list(range(1, 10, 2))
+print(even)
+print(odd)
 
-# my_strimg = "abcdefghiijklmnopqrstuvwxyz"
-# print(my_strimg.index('e'))
-# # .index(with the word or letter in the list) was used to get the index representative also seen below 
-# print(my_strimg[4]) # used [] if its a list of string and () for list on integers as nummber relates
-# # to number and string to string.  
+my_strimg = "abcdefghiijklmnopqrstuvwxyz"
+print(my_strimg.index('e'))
+# .index(with the word or letter in the list) was used to get the index representative also seen below 
+print(my_strimg[4]) # used [] if its a list of string and () for list on integers as nummber relates
+# to number and string to string.  
 
-# small_decimal = range(0, 10)
-# print(small_decimal)
-# print(small_decimal.index(3))
+small_decimal = range(0, 10)
+print(small_decimal)
+print(small_decimal.index(3))
 
-# odd = range(1, 10000, 2)
-# print(odd)
+odd = range(1, 10000, 2)
+print(odd)
 
-# print(odd[985])
+print(odd[985])
 
-# sevens = range(7, 1000000, 7)
-# x = int(input("Please enter a positive number less than one million: "))
-# if x in sevens:
-#     print("{} is divisible by seven".format(x))
-# else:
-#     print("{} is not divisible by seven".format(x))
-# #used to check a value that you parse using the in operator.
+sevens = range(7, 1000000, 7)
+x = int(input("Please enter a positive number less than one million: "))
+if x in sevens:
+    print("{} is divisible by seven".format(x))
+else:
+    print("{} is not divisible by seven".format(x))
+#used to check a value that you parse using the in operator.
 
-# print(small_decimal)
+print(small_decimal)
 
-# my_range = small_decimal[::2]
-# print(my_range)
-# print(my_range.index(4))
-# # this finds where 4 is as an index number
-# print(my_range[4])
-# # while this finds the index value of 4
+my_range = small_decimal[::2]
+print(my_range)
+print(my_range.index(4))
+# this finds where 4 is as an index number
+print(my_range[4])
+# while this finds the index value of 4
 
 decimals = range(0, 100)
 print(decimals)
