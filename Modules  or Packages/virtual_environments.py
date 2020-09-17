@@ -29,6 +29,8 @@
 
 # OSX/LINUS (bash)
 # <folder_name>/bin/activate
+# OR 
+# . <folder_name>/bin/activate
 
 # INSTALLING TO A VIRTUAL ENVIRONMENT
 # Install from an individual package
@@ -39,3 +41,4 @@
 
 # requirements.txt
 # colorama
+python -m pip install --upgrade pip
