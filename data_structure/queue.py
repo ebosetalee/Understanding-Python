@@ -105,13 +105,14 @@ class LinkedList:
 class Queue(LinkedList):
     """
     The queue uses a LinkedList internally to manage the items
+    using Queue(LinkedList) is for inheritance only
     """
     
     def __init__(self):
         """
         Initialize the Queue with an empty LinkedList
         """
-        super().__init__()
+        super().__init__() # for inheritance only
         self.items = LinkedList()
 
     def is_empty(self):
@@ -139,7 +140,7 @@ class Queue(LinkedList):
         """
         current_node = self.items.head
         if not self.items.head:
-            return self.items.head.value
+            return None
         self.items.head = self.items.head.next
         # self.items.walk()
         return current_node.value
@@ -154,6 +155,7 @@ class Queue(LinkedList):
 
 queue = Queue()
 queue.is_empty()
+queue.dequeue()
 
 queue.items.walk()
 

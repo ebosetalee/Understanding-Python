@@ -3,7 +3,8 @@
 [tutorials point](www.tutorialspoint.com/data_structures_algorithms)
 
 Data structure is a programmatic way of collecting, storing and organizing data. 
-TYPES OF DATA STRUCTURE:
+
+__TYPES OF DATA STRUCTURE:__
 Anything that can store data can be called as a data structure, hence Integer, Float, Boolean, Char etc, all are data structures. They are known as Primitive Data Structures.
 Abstract Data Structure are :
 - Linked List
@@ -11,7 +12,7 @@ Abstract Data Structure are :
 - Graph
 - Stack, Queue etc.
 
-The data structures can also be classified on the basis of the following characteristics:
+__The data structures can also be classified on the basis of the following characteristics:__
 Characterstic |	Description
 Linear |	In Linear data structures,the data items are arranged in a linear sequence. Example: Array
 Non-Linear |	In Non-Linear data structures,the data items are not in sequence. Example: Tree, Graph
@@ -25,12 +26,12 @@ Following terms are the foundation terms of a data structure:
 - Interface − Each data structure has an interface. Interface represents the set of operations that a data structure supports. An interface only provides the list of supported operations, type of parameters they can accept and return type of these operations.
 - Implementation − Implementation provides the internal representation of a data structure. Implementation also provides the definition of the algorithms used in the operations of the data structure.
 
-Need for Data Structure:
+__Need for Data Structure:__
 - Data Search
 - Processor Speed
 - Multiple Requests
 
-Basic Terminology
+__Basic Terminology__
 Data − Data are values or set of values.
 Data Item − Data item refers to single unit of values.
 Group Items − Data items that are divided into sub items are called as Group Items.
@@ -41,14 +42,14 @@ Field − Field is a single elementary unit of information representing an attri
 Record − Record is a collection of field values of a given entity.
 File − File is a collection of records of the entities in a given entity set.
 
-Data Definition:
+__Data Definition:__
 It defines a particular data with the following characteristics:
 Atomic − a single concept.
 Traceable − mapped to some data element.
 Accurate − unambiguous.
 Clear and Concise − understandable.
 
-Data Type
+__Data Type__
 This classifies various types of data such as integer, string, etc. There are two data types −
 - Built-in Data Type
 - Derived Data Type
@@ -130,27 +131,27 @@ __Basic Operations__
 3. Display - Displays the list.
 
 __SIMILAARITIES__
-1. Both Linked List and Array are used to store linear data of similar type.
+- Both Linked List and Array are used to store linear data of similar type.
 
-2. __DIFFERENCES__
+__DIFFERENCES__
 ARRAY | LINKED LIST
-Array is a collection of elements of similar data type.	| Linked List is an ordered collection of elements of same type, which are connected to each other using pointers.
+- Array is a collection of elements of similar data type.	| Linked List is an ordered collection of elements of same type, which are connected to each other using pointers.
 
-Array supports Random Access, which means elements can be accessed directly using their index, like arr[0] for 1st element etc. Hence, accessing elements in an array is fast with a constant time complexity of O(1). | Linked List supports Sequential Access, which means to access any element/node in a linked list, we have to sequentially traverse the complete linked list, upto that element. To access nth element of a linked list, time complexity is O(n).
+- Array supports Random Access, which means elements can be accessed directly using their index, like arr[0] for 1st element etc. Hence, accessing elements in an array is fast with a constant time complexity of O(1). | Linked List supports Sequential Access, which means to access any element/node in a linked list, we have to sequentially traverse the complete linked list, upto that element. To access nth element of a linked list, time complexity is O(n).
 
-In array, elements are stored in contiguous memory location or consecutive manner in the memory. | In a linked list, new elements can be stored anywhere in the memory.
+- In array, elements are stored in contiguous memory location or consecutive manner in the memory. | In a linked list, new elements can be stored anywhere in the memory.
 
-In array, Insertion and Deletion operation takes more time, as the memory locations are consecutive and fixed. | In linked list, a new element is stored at the first free and available memory location Thus, Insertion and Deletion operations are fast in linked list.
+- In array, Insertion and Deletion operation takes more time, as the memory locations are consecutive and fixed. | In linked list, a new element is stored at the first free and available memory location Thus, Insertion and Deletion operations are fast in linked list.
 
-Memory is allocated as soon as the array is declared, at compile time. It's also known as Static Memory Allocation.	| Memory is allocated at runtime, as and when a new node is added. It's also known as Dynamic Memory Allocation.
+- Memory is allocated as soon as the array is declared, at compile time. It's also known as Static Memory Allocation.	| Memory is allocated at runtime, as and when a new node is added. It's also known as Dynamic Memory Allocation.
 
-In array, each element is independent and can be accessed using it's index value. |	In case of a linked list, each node/element points to the next, previous, or maybe both nodes.
+- In array, each element is independent and can be accessed using it's index value. |	In case of a linked list, each node/element points to the next, previous, or maybe both nodes.
 
-Array can single dimensional, two dimensional or multidimensional | Linked list can be Linear(Singly), Doubly or Circular linked list.
+- Array can single dimensional, two dimensional or multidimensional | Linked list can be Linear(Singly), Doubly or Circular linked list.
 
-Size of the array must be specified at time of array decalaration | Size of a Linked list is variable. It grows at runtime, as more nodes are added to it.
+- Size of the array must be specified at time of array decalaration | Size of a Linked list is variable. It grows at runtime, as more nodes are added to it.
 
-Array gets memory allocated in the Stack section. |	Whereas, linked list gets memory allocated in Heap section.
+- Array gets memory allocated in the Stack section. |	Whereas, linked list gets memory allocated in Heap section.
 
 __NODE__
 A Node in a linked list holds the data value and the pointer which points to the location of the next node in the linked list. In other words, it is a data value and a pointer (pointing to the next node) put together.
@@ -179,6 +180,41 @@ __Implementation of Queue__
 Queue can be implemented using an Array, Stack or Linked List. The easiest way of implementing a queue is by using an Array.
 Initially the head(FRONT) and the tail(REAR) of the queue points at the first index of the array (starting the index of array from 0). As we add elements to the queue, the tail keeps on moving ahead, always pointing to the position where the next element will be inserted, while the head remains at the first index.
 
+__Types of Queues in Data Structure__
+Queue in data structure is of the following types:
+1. Simple Queue
+2. Circular Queue
+3. Priority Queue
+4. Dequeue (Double Ended Queue)
+
+__Simple Queue__
+The simple queue is a normal queue where insertion takes place at the FRONT of the queue and deletion takes place at the END of the queue.
+
+__Circular Queue__
+In a circular queue, the last node is connected to the first node to make a circle. 
+Circular queue is also called as Ring Buffer.
+This can use an array or circular Linked list.
+Insertion in a circular queue happens at the END and deletion at the FRONT of the queue.
+
+__Priority Queue__
+In a priority queue, the nodes will have some predefined priority.
+Insertion in a priority queue is performed in the order of arrival of the nodes.
+The node having the least priority will be the first to be removed from the priority queue.
+
+__Dequeue (Doubly Ended Queue)__
+In a Double Ended Queue, insertion and deletion operations can be done at both FRONT and END of the queue.
+
+- __Implementation of Double ended Queue:__
+Here we will implement a double ended queue using a circular array. It will have the following methods:
+- push_back : inserts element at back
+- push_front : inserts element at front
+- pop_back : removes last element
+- pop_front : removes first element
+- get_back : returns last element
+- get_front : returns first element
+- empty : returns true if queue is empty
+- full : returns true if queue is full
+
 
 ### __What is an Algorithm ?__
 
@@ -195,21 +231,21 @@ Step 5 − STOP
 
 Writing step numbers, is optional
 
-The important categories of algorithms :
+__The important categories of algorithms:__
 Search − search an item in a data structure.
 Sort − sort items in a certain order.
 Insert − insert item in a data structure.
 Update − update an existing item in a data structure.
 Delete − delete an existing item from a data structure.
 
-Characteristics of an Algorithm:
+__Characteristics of an Algorithm:__
 Input- There should be 0 or more inputs supplied externally to the algorithm.
 Output- There should be atleast 1 output obtained.
 Definiteness- Every step of the algorithm should be clear and well defined.
 Finiteness- The algorithm should have finite number of steps.
 Correctness- Every step of the algorithm must generate a correct output.
 
-Algorithm Analysis:
+__Algorithm Analysis:__
 The efficiency of an algorithm can be analyzed at two different stages, before implementation and after implementation. 
 They are the following −
 - A Priori Analysis − This is a theoretical analysis of an algorithm where it is measured by assuming that all other factors, eg. processor speed, are constant and have no effect on the implementation.
@@ -220,15 +256,14 @@ An algorithm is said to be efficient and fast, if it takes less time to execute 
 - Time Complexity
 - Space Complexity
 
-Space Complexity:
+__Space Complexity:__
 Its the amount of memory space required by the algorithm life cycle, during the course of its execution. The space required by an algorithm is equal to the sum of the following two components:
 - A fixed part that is a space required to store certain data and variables, that are independent of the size of the problem. Eg. simple variables and constants used, program size, etc.
 - A variable part that is a space required by variables, whose size depends on the size of the problem. Eg. dynamic memory allocation, recursion stack space, etc.
 
-Time Complexity:
+__Time Complexity:__
 Its a way to represent the amount of time required by the program to run till its completion. 
 It's generally a good practice to try to keep the time required minimum, so that our algorithm completes it's execution in the minimum time possible.
 
 When it comes to analysing the complexity of any algorithm in terms of time and space, we can never provide an exact number to define the time required and the space required by the algorithm, instead we express it using some standard notations, also known as Asymptotic Notations.
 The word Asymptotic means approaching a value or curve arbitrarily closely (i.e., as some sort of limit is taken).
-
