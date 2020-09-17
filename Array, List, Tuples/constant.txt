@@ -1,0 +1,14 @@
+A constant is a fixed value that doesn't change.
+
+Mathematics and Physical sciences use lots of constants.
+
+For example:
+- Pi: The ratio of a circle's circumference to its diameter = 3.141592653589793
+- e: The base of natural logarithms = 2.718281828
+- Avogadro's constant: The number of particles in one mole = 6.02214076E23
+- c: The speed of light in a vacuum = very fast
+
+Thus, constants musn't be changed.
+
+In Python, Constants are usually defined on a module level and written in all capital letters with underscores separating words.
+Examples include MAX_OVERFLOW and TOTAL.
