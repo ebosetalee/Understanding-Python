@@ -67,12 +67,13 @@ __Implementing `unittest` as seen in test2.py:__
 
 __HOW TO WRITE ASSERTIONS:__
 Method |  Equivalent to
-- .assertEqual | (a, b)	a == b
+- .assertEqual(a, b) |	a == b
 - .assertTrue(x)	| bool(x) is True
 - .assertFalse(x)	| bool(x) is False
 - .assertIs(a, b)	| a is b
 - .assertIsNone(x) |	x is None
 - .assertIn(a, b) |	a in b
 - .assertIsInstance(a, b) |	isinstance(a, b)
+- .assertRaises(TypeError) | Raises(TypeError)
 
 .assertIs(), .assertIsNone(), .assertIn(), and .assertIsInstance() all have opposite methods, named .assertIsNot(), and so forth...
