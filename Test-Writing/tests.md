@@ -71,9 +71,19 @@ Method |  Equivalent to
 - .assertTrue(x)	| bool(x) is True
 - .assertFalse(x)	| bool(x) is False
 - .assertIs(a, b)	| a is b
+- .assertIsNot(a, b) |  a is not b
 - .assertIsNone(x) |	x is None
+- .assertIsNotNone(x) | x is not None
 - .assertIn(a, b) |	a in b
 - .assertIsInstance(a, b) |	isinstance(a, b)
 - .assertRaises(TypeError) | Raises(TypeError)
+- .assertAlmostEqual(x(a), b) | x(a) is abbr. == b
+- .assertNotEqual(a, b) | a != b
+- .assertGreater(a, b) | a > b
+- .assertGreaterEqual(a, b) | a >= b
+- .assertRegex(s, r) | r.search(s)
+- .assertNotRegex(s, r) | not r.search(s)
+- .assertCountEqual(a, b)
+- etc.
 
-.assertIs(), .assertIsNone(), .assertIn(), and .assertIsInstance() all have opposite methods, named .assertIsNot(), and so forth...
+.assertIs(), .assertIsNone(), .assertIn(), and .assertIsInstance() all have opposite methods, named .assertIsNot(), .assertNotIsInstance(), .asserLess(), .assertLessEqual and so forth...
