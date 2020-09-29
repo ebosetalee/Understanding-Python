@@ -156,7 +156,7 @@ ARRAY | LINKED LIST
 __NODE__
 A Node in a linked list holds the data value and the pointer which points to the location of the next node in the linked list. In other words, it is a data value and a pointer (pointing to the next node) put together.
 
-__QUEUE__
+##### __QUEUE__
 Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is open at both its ends. One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). 
 Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.
 In computer science, a queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principle (or only) operations on the collection are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. 
@@ -187,21 +187,21 @@ Queue in data structure is of the following types:
 3. Priority Queue
 4. Dequeue (Double Ended Queue)
 
-__Simple Queue__
+###### __Simple Queue__
 The simple queue is a normal queue where insertion takes place at the FRONT of the queue and deletion takes place at the END of the queue.
 
-__Circular Queue__
+###### __Circular Queue__
 In a circular queue, the last node is connected to the first node to make a circle. 
 Circular queue is also called as Ring Buffer.
 This can use an array or circular Linked list.
 Insertion in a circular queue happens at the END and deletion at the FRONT of the queue.
 
-__Priority Queue__
+###### __Priority Queue__
 In a priority queue, the nodes will have some predefined priority.
 Insertion in a priority queue is performed in the order of arrival of the nodes.
 The node having the least priority will be the first to be removed from the priority queue.
 
-__Dequeue (Doubly Ended Queue)__
+###### __Dequeue (Doubly Ended Queue)__
 In a Double Ended Queue, insertion and deletion operations can be done at both FRONT and END of the queue.
 
 - __Implementation of Double ended Queue:__
@@ -214,6 +214,25 @@ Here we will implement a double ended queue using a circular array. It will have
 - get_front : returns first element
 - empty : returns true if queue is empty
 - full : returns true if queue is full
+
+##### __Stack__
+__Stack__ is an abstract data type with a bounded(predefined) capacity. 
+It is a simple data structure that allows adding and removing elements in a particular order.
+
+- __Basic features of Stack:__
+1. Stack is an ordered list of similar data type.
+2. Stack is a __LIFO(Last in First out)__ structure or we can say FILO(First in Last out).
+3. `push()` function is used to insert new elements into the Stack and `pop()` function is used to remove an element from the stack. Both insertion and removal are allowed at only one end of Stack called __Top__.
+4. Stack is said to be in Overflow state when it is completely full and is said to be in Underflow state if it is completely empty.
+
+- __Implementation of Stack using Linked List:__
+It has the following operations :
+- push: push an element into the stack
+- pop: remove the last element added
+- top(peek): returns the element at top of stack.
+
+##### __Hash Table__
+
 
 
 ### __What is an Algorithm ?__
