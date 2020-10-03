@@ -21,6 +21,10 @@ for i in range(0, 15, 3):
 for i in range(100, 0, -10):
     print(i)
 
+# seperators
+for i in range(5):
+    print(1, 2, 3, sep=":")
+
 sharks = ['hammerhead', 'Great White', 'dogfish', 'frilled', 'bullhead']
 for x in sharks:
     print(x)
