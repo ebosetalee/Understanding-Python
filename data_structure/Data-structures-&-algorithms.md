@@ -4,13 +4,16 @@
 
 Data structure is a programmatic way of collecting, storing and organizing data. 
 
-__TYPES OF DATA STRUCTURE:__
+#### __TYPES OF DATA STRUCTURE:__
 Anything that can store data can be called as a data structure, hence Integer, Float, Boolean, Char etc, all are data structures. They are known as Primitive Data Structures.
 Abstract Data Structure are :
 - Linked List
 - Tree
 - Graph
-- Stack, Queue etc.
+- Stack
+- Heaps
+- Hash Table
+- Queue etc.
 
 __The data structures can also be classified on the basis of the following characteristics:__
 Characterstic |	Description
@@ -232,6 +235,37 @@ It has the following operations :
 - top(peek): returns the element at top of stack.
 
 ##### __Hash Table__
+A hash table (hash map) is a data structure which implements an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.
+
+Ideally, the hash function will assign each key to a unique bucket, but most hash table designs employ an imperfect hash function, which might cause hash collisions where the hash function generates the same index for more than one key. Such collisions must be accommodated in some way.
+
+##### __Tree__
+A tree is a widely used abstract data type (ADT) — or data structure implementing this ADT— that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node, represented as a set of linked nodes.
+It is used mostly for representing hierarchical information.
+
+A tree data structure can be defined recursively (locally) as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the "children"), with the constraints that no reference is duplicated, and none points to the root.
+
+
+__Terminologies__
+- Root Node - The topmost node in a tree and will not have a parent. 
+- Nodes - A node is a structure which may contain a value or condition, or represent a separate data structure
+- Leaf Nodes - Any node that does not have child nodes.
+- Parents - A node that has a child is called the child's parent node. A node has at most one parent, but possibly many ancestor nodes, such as the parent's parent.
+- Children 
+- Ancestor - A node reachable by repeated proceeding from child to parent.
+- Levels 
+
+###### Types of trees
+- Binary Search Tree (BST)
+- AVL Tree
+- B-Trees
+- Red-Black Tree
+- Segment Tree - with min/max/sum range queries examples
+- Fenwick Tree (Binary Indexed Tree)
+
+###### Data structures that use Trees
+- Heap
+- Binary Search Tree (BST)
 
 
 
