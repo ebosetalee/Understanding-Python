@@ -320,3 +320,44 @@ It's generally a good practice to try to keep the time required minimum, so that
 
 When it comes to analysing the complexity of any algorithm in terms of time and space, we can never provide an exact number to define the time required and the space required by the algorithm, instead we express it using some standard notations, also known as Asymptotic Notations.
 The word Asymptotic means approaching a value or curve arbitrarily closely (i.e., as some sort of limit is taken).
+
+###### Examples of writing Algorithms for data structures:
+
+__Algorithm for Queue:__
+- ENQUEUE operation
+```
+Check if the queue is full or not.
+If the queue is full, then print overflow error and exit the program.
+If the queue is not full, then increment the tail and add the element.
+```
+
+```
+- DEQUEUE operation
+Check if the queue is empty or not.
+If the queue is empty, then print underflow error and exit the program.
+If the queue is not empty, then print the element at the head and increment the head.
+```
+
+
+__Algorithm for Stack:__
+- PUSH operation
+```
+Check if the stack is full or not.
+If the stack is full, then print error of overflow and exit the program.
+If the stack is not full, then increment the top and add the element.
+```
+ 
+- __POP operation__
+```
+Check if the stack is empty or not.
+If the stack is empty, then print error of underflow and exit the program.
+If the stack is not empty, then print the element at the top and decrement the top
+```
+
+__Algorithm for Tree:__
+```
+Until all nodes are traversed −
+Step 1 − Visit root node.
+Step 2 − Recursively traverse left subtree.
+Step 3 − Recursively traverse right subtree.
+```
