@@ -120,8 +120,7 @@ class BinarySearchTree:
         if current_node.right:
             elements += self._display_postorder(current_node.right)
         if current_node.left:
-            elements += self._display_postorder(current_node.left) 
-        print(elements)      
+            elements += self._display_postorder(current_node.left)     
         return elements
 
     def find(self, value):
