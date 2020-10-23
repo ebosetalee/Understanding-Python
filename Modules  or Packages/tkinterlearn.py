@@ -19,3 +19,9 @@ print(tkinter.TkVersion)
 print(tkinter.TclVersion)
 
 tkinter._test()
+
+rainbow = tk.Tk()
+
+rainbow.title("Hello World")
+rainbow.geometry("640x480")
+rainbow.mainloop()
