@@ -2,7 +2,7 @@ import unittest
 from hash_table.list_or_array.hash_table import HashTable
 
 
-class MyTestCase(unittest.TestCase):
+class TestHashTable(unittest.TestCase):
     def test_empty_hash_table(self):
         hash_table = HashTable()
         self.assertEqual(hash_table.get_keys(), [])
@@ -20,7 +20,7 @@ class MyTestCase(unittest.TestCase):
     def test_set(self):
         hash_table = HashTable()
         value = "Jasmine Smith"
-        hash_table.set(value)
+        self.assertTrue(hash_table.set(value))
         self.assertEqual(hash_table.get_keys(), ["Jasmine Smith"])
 
     def test_get_in_hash_table(self):

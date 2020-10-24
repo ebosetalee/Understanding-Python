@@ -43,6 +43,7 @@ class HashTable:
         if self.has(key):
             # print("done")
             self.table[key] = value
+            return True
         else:
             # print("yikes")
             added = 1      
@@ -50,9 +51,11 @@ class HashTable:
                 key = self.hash(value) + added          
                 if index == key:
                     if not item:
-                        self.table[index] = value         
+                        self.table[index] = value  
+                        return True       
                     else:
-                        added += 1                
+                        added += 1            
+        return False    # added this if the table is full
 
     def get_keys(self):
         """"
