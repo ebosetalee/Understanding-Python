@@ -19,3 +19,16 @@ if validation:
     print("yayyyy")
 else:
     print("one letter or !")
+
+males = ["bayo", "simi", "truce!4", "smile!#"]
+male = "truce!$"
+stop = re.search("[a-zA-Z]\w+", male)
+rain = stop.group()
+print(stop)
+print(rain)
+
+m = 140
+total = 0
+for i in range(m):
+    total += (m-i)
+    print(total)

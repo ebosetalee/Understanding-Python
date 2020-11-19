@@ -39,6 +39,8 @@
 # Install from a list of packages
 # pip install -r requirements.txt
 
+# pip freeze > requirements.txt
+
 # requirements.txt
 # colorama
 # python -m pip install --upgrade pip

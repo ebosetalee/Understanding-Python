@@ -12,9 +12,9 @@ SQLite is fast and very stable stand-alone database.
 
 ## DATABASE TERMINOLOGY:
 
-- Databse - the container for all stored data
+- Database - the container for all stored data
 In sqlite, the entire database is stored in a single file
-- Databse dictionary - provides a comprehensive list of structures and tyes of data used in recording the data in the database.
+- Database dictionary - provides a comprehensive list of structures and types of data used in recording the data in the database.
 - In sqlite there is a table in each database called __SQL_lite_master__ that has this information in it you can query that table. However, there are commands that can do that.
 - Table - A collection of related data held in the database.
 - Field is the basic unit of data in the table so similar way to what a variable is. There are date fields, large text field and blobs(binary large object) - stored photographs or audio. __Fields__ are often referred to as columns in database; i.e single entry.
@@ -23,6 +23,8 @@ In sqlite, the entire database is stored in a single file
 - View - is a way of looking at the data in a format similar to a table. In other words, It is a selection of rows and columns. It can contain one column from a single table.
 
 - the sqlite command line shell is already installed on a mac
+
+To begin, in the terminal, type `sqlite3`
 
 __Note:__ some sql statements can be terminated with a semi colon ";"
 
@@ -160,7 +162,7 @@ COMMIT;
 ```
 to leave.
 
-We're looking at views and join.
+### We're looking at views and join.
 __Note:__ In relational databases is that the ordering of the rows is undefined, That's why
 you need an ID column. 
 __Note:__ Not null
