@@ -32,8 +32,7 @@ cursor.close()
 db.commit()
 db.close
 
-# cursors is a generator i.e iterable by generating the
-# next value  
+# cursors is a generator i.e iterable by generating the next value  
 
 db = sqlite3.connect("contacts.sqlite")
 
@@ -53,5 +52,5 @@ for name, phone, email in db.execute("SELECT * FROM contacts"):
     print("-"*40)
 
 db.close()
-# Nothing prints because using Insert or update doesn't stop permanently.
+# Nothing prints because using Insert or update doesn't store permanently.
 # Thus, we need to commit the changes.

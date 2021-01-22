@@ -6,6 +6,9 @@ print(max(even))
 print(min(odd))
 print(max(odd))
 
+# Note: to return the index number of an item in a string,
+print("the index number is ", even.index(6))
+
 numbers = odd + even
 # numbers.sort()
 # is command is used to check if the two are identically equal 
