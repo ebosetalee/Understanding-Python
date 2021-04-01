@@ -104,3 +104,15 @@ print(hamilton.on)
 # True. This can also be printed in another way
 Kettle.switch_on(kenwood)
 print(kenwood.on)
+
+class Bodmas:
+    def __init__(self):
+        self.addone = 1
+
+    def addition(self,a,b):
+        return a+b 
+    def addandone(self,c,d):
+        return self.addition(c,d) + self.addone
+    
+calc = Bodmas()
+print(calc.addandone(2,3))
