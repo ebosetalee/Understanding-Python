@@ -3,87 +3,117 @@ from rich.console import *
 
 console = Console(width=100, color_system="truecolor", emoji=True)
 
-welcome = """WELCOME! to [i #424CDF ]@ebosetalee's[/i #424CDF]
-[b #BFBF1B]Rock, Paper, Scissor Game[/b #BFBF1B]!!!"""
+welcome = """\nWELCOME! to [i #424CDF ]@ebosetalee's[/i #424CDF]
+[b #BFBF1B]Rock, Paper, Scissor Game !!![/b #BFBF1B]"""
 
 
-console.rule(welcome+ "\n\n")
-console.print(""" [frame]
-    Welcome to my games page!!!\n
-        You are playing Rock, Paper, Scissors. 
-        The mind game where we interpret numbers using our hands to mean
-        Rock as 0, Paper(flat) as 5, Scissors as 2. \n
-        Traditionally, the rules remain:
-            - Rock beats scissors
-            - Scissors beats paper
-            - Paper beats rock. 
+console.rule(welcome + "\n\n")
+console.print(""" [frame #FFE5B4]
+        Welcome to my games page!!!\n
+            You are playing Rock, Paper, Scissors. 
+            The mind game where we interpret numbers using our hands to mean
+            Rock as 0, Paper(flat) as 5, Scissors as 2. \n
+            Traditionally, the rules remain:
+                - Rock beats scissors
+                - Scissors beats paper
+                - Paper beats rock. 
 
-        :Sparkles:NOTE: You can type the number or the letters.:Sparkles:
+         :Sparkles: NOTE: You can type the number or the letters. :Sparkles:
 
-        Hope you enjoy the game.... :Winking_face: [/frame]
+            Don't forget Y or N!
+
+        Hope you enjoy the game.... :Winking_face: [/frame #FFE5B4]
 """)
 
 console.print(
-        "\n:smiley:", "WELCOME!!!!", ":smiley:\n\n", ":Man_dancing: :Woman_dancing: " * 10,
-        "\n", style="#386691 on #808080", justify="center")
+    "\n:smiley:", "WELCOME!!!!", ":smiley:\n\n", ":Man_dancing: :Woman_dancing: " * 10,
+    "\n", style="#386691 on #808080", justify="center")
 
 
-player1_name  = input("Player 1, what is your first name? ")
-player2_name  = input("Player 2, what is your first name? ")
-
-player1 = input("It's Player 1's turn. Rock(0), Paper(5), Scissors(2): ")
-player2 = input("Player 2. Rock(0), Paper(5), Scissors(2): ")
+player1_name = input(
+    "\nHii.. Player 1, what is your first name? ").capitalize()
+player2_name = input(
+    "\nHello.. Player 2, what is your first name? ").capitalize()
 
 rock = 0
 scissors = 2
 paper = 5
-def lowercase(strings):
-    pass
 
 
-while True:
-    player1 = input("It's Player 1's turn. Rock(0), Paper(5), Scissors(2): ")
-    player2 = input("Player 2. Rock(0), Paper(5), Scissors(2): ")
-    if type(player1) == str:
-        player1.lower
+def lowercase(player):
+    play = console.input(
+        "\n[blue]It's {}'s turn[/blue]. Rock(0), Paper(5), Scissors(2): ".format(player))
+    try:
+        play = int(play)
+    except ValueError:
+        return play.lower()
+    finally:
+        return play
 
-    if type(player2) == str:
-        print("boom")
+
+def replay(answer):
+    if answer.lower() == "y":
+        return main_game()
+    console.rule("Thank you for playing!! BYE.....")
+
+
+def main_game():
+    player1 = lowercase(player1_name)
+    player2 = lowercase(player2_name)
+
     if player1 == rock or player1 == "rock":
-        if player2 == scissors:
-            name = (input("Player 1 is the winner, what is your name Player 1 "))
-            print("CONGRATULATIONS!!! {}".format(name))
-            break
-        elif player2 == paper:
-            name2 = input("Player 2 is the winner, What is your name Player 2 ")
-            print("CONGRATULATIONS!!! {}".format(name2))
-            break
+        if player2 == scissors or player2 == "scissors":
+            console.print(
+                "\n[b green]CONGRATULATIONS!!! {} won![/b green]\n".format(player1_name))
+            replay(console.input(
+                "[b yellow]Do you wanna play again?(Y/N)[/b yellow] "))
+        elif player2 == paper or player2 == "paper":
+            console.print(
+                "\n[b green]CONGRATULATIONS!!! {} won![/b green]\n".format(player2_name))
+            replay(console.input(
+                "[b yellow]Do you wanna play again?(Y/N)[/b yellow] "))
         else:
-            print("Please play again rock doesn't beat rock. Thank you")
-            break
-    elif player1 == scissors:
-        if player2 == rock:
-            name3 = input("Player 2 is the winner, What is your name Player 2  ")
-            print("CONGRATULATIONS!!! {}".format(name3))
-            break
-        elif player2 == paper:
-            name4 = input("Player 1 is the winner, What is your name Player 1  ")
-            print("CONGRATULATIONS!!! {}".format(name4))
-            break
+            console.print(
+                "\n[b red]Please play again rock doesn't beat rock. Thank you[/b red]\n")
+            replay(console.input(
+                "[b yellow]Do you wanna play again?(Y/N)[/b yellow] "))
+
+    elif player1 == scissors or player1 == "scissors":
+        if player2 == rock or player2 == "rock":
+            console.print(
+                "\n[b green]CONGRATULATIONS!!! {} won![/b green]\n".format(player2_name))
+            replay(console.input(
+                "[b yellow]Do you wanna play again?(Y/N)[/b yellow] "))
+        elif player2 == paper or player2 == "paper":
+            console.print(
+                "\n[b green]CONGRATULATIONS!!! {} won![/b green]\n".format(player1_name))
+            replay(console.input(
+                "[b yellow]Do you wanna play again?(Y/N)[/b yellow] "))
         else:
-            print("Please play again Scissors can't beat Scissors. Thank you")
-            break
-    elif player1 == paper:
-        if player2 == rock:
-            name5 = input("Player 1 is the winner, What is your name Player 1  ")
-            print("CONGRATULATIONS!!! {}".format(name5))
-            break
-        elif player2 == scissors:
-            name6 = input("Player 2 is the winner, What is your name Player 2  ")
-            print("CONGRATULATIONS!!! {}".format(name6))
-            break
+            console.print(
+                "\n[b red]Please play again Scissors can't beat Scissors. Thank you\n")
+            replay(console.input(
+                "[b yellow]Do you wanna play again?(Y/N)[/b yellow] "))
+
+    elif player1 == paper or player1 == "paper":
+        if player2 == rock or player2 == "rock":
+            console.print(
+                "\n[b green]CONGRATULATIONS!!! {} won![/b green]\n".format(player1_name))
+            replay(console.input(
+                "[b yellow]Do you wanna play again?(Y/N)[/b yellow] "))
+        elif player2 == scissors or player2 == "scissors":
+            console.print(
+                "\n[b green]CONGRATULATIONS!!! {} won![/b green]\n".format(player2_name))
+            replay(console.input(
+                "[b yellow]Do you wanna play again?(Y/N)[/b yellow] "))
         else:
-            print("Please play again Paper can't beat Paper. Thank you")
-            break
+            console.print(
+                "\n[b red]Please play again Paper can't beat Paper. Thank you[/b red]\n")
+            replay(console.input(
+                "[b yellow]Do you wanna play again?(Y/N)[/b yellow] "))
+
     else:
-        print("Ensure you type the correct letters or numbers. Play Again!!!")
+        print("\nEnsure you type the correct letters or numbers. Play Again!!!")
+
+
+main_game()
