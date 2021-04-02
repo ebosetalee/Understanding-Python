@@ -67,7 +67,7 @@ def balance():
     n = int(input("What is the number of times per year that the interest is compounded? "))
     t = int(input("What is the specified number of years? "))
     nt = n * t
-    balance_total = principal_amount * ((1 + (r / n)) ** nt) 
+    balance_total = p * ((1 + (r / n)) ** nt) 
     return "The Balance of Account is {}".format(balance_total)
 print(balance())
 
