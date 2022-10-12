@@ -1,7 +1,7 @@
 autopep8==1.5.4
 colorama==0.4.4
 commonmark==0.9.1
-numpy==1.19.1
+numpy==1.22.0
 pycodestyle==2.6.0
 Pygments==2.7.4
 pymongo==3.11.1
